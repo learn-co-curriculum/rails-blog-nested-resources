@@ -1,5 +1,5 @@
 ---
-tags: rails, strong params, nested resources, collections, partials, REST
+tags: rails, strong params, nested resources, collections, REST
 language: ruby
 resources: 1
 ---
@@ -8,14 +8,15 @@ resources: 1
 
 We're going to add another feature to our blog app: the ability comment on a post.
 
-1. Create a migration, model, and controller for Comment (let's run rails generate model and rails generate controller).
+1. Generate a model for Comment.
 2. Associate comment and post and user.
-3. Comment should have content, a user_id, and a post_id.
+3. Comment should have content, a user_id, and a post_id. 
 4. Let's create some validations on comment; content should always be present.
-5. Comments will be a resource nested under posts. Why? Logically, we only care about comments when they pertain to a specific post.
+5. Generate a controller for comment to handle all of the actions. We only need: new, create, edit, update, and destroy. Be sure to permit appropriate params in a private method.
+6. Comments will be a resource nested under posts. Why? Logically, we only care about comments when they pertain to a specific post.
 
-Check out the documentation on [Nested Resources](http://guides.rubyonrails.org/routing.html#nested-resources).
+Check out the documentation on [Nested Resources](http://guides.rubyonrails.org/routing.html#nested-resources), specifically on how to only include certain routes; have them correlate with what we have in our controller.
 
-6. On an individual post, we want to have a form to submit a comment. For fun, and for best Rails practices, let's make it a partial that we yield to.  Refer to the documentation on [Layouts, Rendering, and Collections](http://guides.rubyonrails.org/layouts_and_rendering.html#understanding-yield).
-7. Remember, comment is associated with a post, so we need to include the correct params on the post controller. We also want to associate a comment with a user too. For now (before we have a login system), the user will type in their name.
-
+7. Edit the show page for a post to include all comments for the post.
+8. On the post show page, we want to have a form to submit a comment. Build out a form for that takes an array as a parameter, and has a [hidden field](http://apidock.com/rails/ActionView/Helpers/FormHelper/hidden_field) to handle the `post_id`. 
+9. To handle this form, we need to build a comment from the post show method.
