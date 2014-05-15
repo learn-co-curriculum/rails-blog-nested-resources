@@ -8,6 +8,8 @@ resources: 1
 
 We're going to add another feature to our blog app: the ability comment on a post.
 
+## Nesting Resources
+
 1. Generate a model for Comment.
 2. Associate comment and post and user.
 3. Comment should have content, a user_id, and a post_id. 
@@ -17,6 +19,12 @@ We're going to add another feature to our blog app: the ability comment on a pos
 
 Check out the documentation on [Nested Resources](http://guides.rubyonrails.org/routing.html#nested-resources), specifically on how to only include certain routes; have them correlate with what we have in our controller.
 
+## Posting a Comment to a Post
+
 7. Edit the show page for a post to include all comments for the post.
 8. On the post show page, we want to have a form to submit a comment. Build out a form for that takes an array as a parameter, and has a [hidden field](http://apidock.com/rails/ActionView/Helpers/FormHelper/hidden_field) to handle the `post_id`. 
 9. To handle this form, we need to build a comment from the post show method.
+
+## Rendering Collections
+
+We're going to do a bit refactoring on our posts index through [rendering collections](http://guides.rubyonrails.org/layouts_and_rendering.html).
