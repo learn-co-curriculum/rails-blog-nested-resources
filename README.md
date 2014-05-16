@@ -25,6 +25,6 @@ Check out the documentation on [Nested Resources](http://guides.rubyonrails.org/
 8. On the post show page, we want to have a form to submit a comment. Build out a form for that takes an array as a parameter, and has a [hidden field](http://apidock.com/rails/ActionView/Helpers/FormHelper/hidden_field) to handle the `post_id`. 
 9. To handle this form, we need to build a comment from the post show method.
 
-## Rendering Collections
+## Rendering Collections, a Refactor
 
-We're going to do a bit refactoring on our posts index through [rendering collections](http://guides.rubyonrails.org/layouts_and_rendering.html).
+We're going to do a bit refactoring on our posts index page by [rendering collections](http://guides.rubyonrails.org/layouts_and_rendering.html) instead of iterating through our @posts in the view. Rendering collections is useful in keeping a complex view looking clean, and making a view DRYer. Our posts index page isn't the most complicated view, but it's a great starting point for refactoring our views. Give it a try elsewhere in our blog app as well.
