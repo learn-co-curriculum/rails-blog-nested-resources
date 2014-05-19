@@ -1,7 +1,7 @@
 ---
 tags: rails, strong params, nested resources, collections, REST
 language: ruby
-resources: 1
+resources: 3
 ---
 
 # Rails Blog: Nested Resources and Rendering Collections
@@ -28,3 +28,12 @@ Check out the documentation on [Nested Resources](http://guides.rubyonrails.org/
 ## Rendering Collections, a Refactor
 
 We're going to do a bit refactoring on our posts index page by [rendering collections](http://guides.rubyonrails.org/layouts_and_rendering.html) instead of iterating through our @posts in the view. Rendering collections is useful in keeping a complex view looking clean, and making a view DRYer. Our posts index page isn't the most complicated view, but it's a great starting point for refactoring our views. Give it a try elsewhere in our blog app as well.
+
+
+## Resources
+
+[Nested Resources](http://guides.rubyonrails.org/routing.html#nested-resources)
+
+[Hidden Fields](http://apidock.com/rails/ActionView/Helpers/FormHelper/hidden_field)
+
+[Rendering Collections](http://guides.rubyonrails.org/layouts_and_rendering.html)
