@@ -23,7 +23,7 @@ Check out the documentation on [Nested Resources](http://guides.rubyonrails.org/
 
 7. Edit the show page for a post to include all comments for the post.
 8. On the post show page, we want to have a form to submit a comment. Build out a form for that takes an array as a parameter, and has a [hidden field](http://apidock.com/rails/ActionView/Helpers/FormHelper/hidden_field) to handle the `post_id`. 
-9. To handle this form, we need to build a comment from the post show method.
+9. Be sure to include `comments_attributes` on the posts controller.
 
 ## Rendering Collections, a Refactor
 
