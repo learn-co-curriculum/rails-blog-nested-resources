@@ -21,7 +21,7 @@
 
   <div class="field">
     <%= f.collection_check_boxes :tag_ids, Tag.all, :id, :name %><br>
-    <%= f.fields_for [@post, Tag.new] do |tag_form| %>
+    <%= f.fields_for(:tags, Tag.new) do |tag_form| %>
       <p>Add a new tag:</p><br>
       <%= tag_form.label :name %>
       <%= tag_form.text_field :name %>
