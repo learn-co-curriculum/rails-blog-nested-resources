@@ -1,18 +1,9 @@
 require 'spec_helper'
 
 describe User do
-
-  its "user is valid" do 
-    expect(User.create(name: "Crookshanks")).to be_valid
+  context 'User Relationship to Comment' do 
+    it 'has many comments' do 
+      expect(@kitten.comments.count).to eq(2)
+    end
   end
-
-  its "invalid with no name" do 
-    expect(User.create(name: nil)).to_not be_valid
-  end
-
-  its "invalid if name already exists" do 
-    User.create(name: "Crookshanks")
-    expect(User.create(name: "Crookshanks")).to_not be_valid
-  end
-
 end

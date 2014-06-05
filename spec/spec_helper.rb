@@ -19,7 +19,18 @@ RSpec.configure do |config|
   config.infer_base_class_for_anonymous_controllers = false
   config.order = "default"
   config.include Capybara::DSL
+
   DatabaseCleaner.strategy = :truncation
+
+  config.before(:each) do 
+    @crookshanks = User.create(name: "Crookshanks")
+    @kitten = User.create(name: "Kitten")
+    @post1 = @crookshanks.posts.create(name: "post title", content: "post content")
+    @post2 = @crookshanks.posts.create(name: "my second post", content: "post content")
+    @comment1 = Comment.create(:user_id => @kitten.id, :post_id => @post1.id, :content => "Meow!")
+    @comment2 = Comment.create(:user_id => @kitten.id, :post_id => @post1.id, :content => "Meow meow!")
+  end
+
   config.after(:all) do 
     DatabaseCleaner.clean
   end

@@ -2,16 +2,14 @@ require 'spec_helper'
 
 describe Post do
 
-  its "post is valid" do 
-    expect(Post.create(name: "hi", content: "hello")).to be_valid
-  end
+  context 'Post relationship to Comment' do 
+    it 'has many comments' do 
+      expect(@post1.comments.count).to eq(2)
+    end
 
-  its "invalid with no name" do 
-    expect(Post.create(name: nil, content: "i have no name")).to_not be_valid
+    it 'associated comments are deleted with it' do 
+      @post1.destroy
+      expect(Comment.all).to eq([])
+    end
   end
-
-  its "invalid with no content" do 
-    expect(Post.create(name: "Name", content: nil)).to_not be_valid
-  end
-
 end
