@@ -5,10 +5,10 @@ resources: 2
 ---
 
 ## Before doing this lab, you should have completed the following labs:
-1. Scaffolding for Post, form_for, generators (Done: https://github.com/flatiron-school-curriculum/rails-blog-scaffold)
-2. Adding Tags, and Users, Associations, Validations (Done: https://github.com/flatiron-school-curriculum/rails-blog-associations-validations)
-3. Adding complex nested forms (adding tags with a post) (Done: https://github.com/flatiron-school-curriculum/rails-blog-nested-forms)
-4. Nested resources (adding comment on a post) (Done: https://github.com/flatiron-school-curriculum/rails-blog-nested-resources)
+1. Rails Blog Scaffold
+2. Rails Blog Associations Validations
+3. Rails Blog Nested Forms
+4. Rails Blog Nested Resources
 
 # Rails Blog: Comments
 
