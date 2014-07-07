@@ -8,7 +8,6 @@ resources: 2
 1. Rails Blog Scaffold
 2. Rails Blog Associations Validations
 3. Rails Blog Nested Forms
-4. Rails Blog Nested Resources
 
 # Rails Blog: Comments
 
