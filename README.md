@@ -4,6 +4,11 @@ language: ruby
 resources: 2
 ---
 
+## Before doing this lab, you should have completed the following labs:
+1. Rails Blog Scaffold
+2. Rails Blog Associations Validations
+3. Rails Blog Nested Forms
+
 # Rails Blog: Comments
 
 We're going to add another feature to our blog app: the ability comment on a post.
