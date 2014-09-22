@@ -9,7 +9,7 @@ describe 'comment actions', :type => :feature do
     expect(page).to have_content(@comment1.content)
   end
 
-  its 'post knows about its existing comments' do 
+  it 'post knows about its existing comments' do 
     visit 'posts/1'
     expect(page).to have_content(@comment2.content)
   end
