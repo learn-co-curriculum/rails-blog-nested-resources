@@ -21,7 +21,7 @@ RSpec.configure do |config|
 
   DatabaseCleaner.strategy = :truncation
 
-  config.before(:each) do 
+  config.before(:all) do
     @crookshanks = User.create(name: "Crookshanks")
     @kitten = User.create(name: "Kitten")
     @post1 = @crookshanks.posts.create(name: "post title", content: "post content")
@@ -30,7 +30,7 @@ RSpec.configure do |config|
     @comment2 = Comment.create(:user_id => @kitten.id, :post_id => @post1.id, :content => "Meow meow!")
   end
 
-  config.after(:all) do 
+  config.after(:all) do
     DatabaseCleaner.clean
   end
 end
