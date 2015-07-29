@@ -1,8 +1,4 @@
----
-tags: rails, strong params, nested resources, REST, hidden_field
-language: ruby
-resources: 2
----
+
 
 ## Before doing this lab, you should have completed the following labs:
 1. Rails Blog Scaffold
