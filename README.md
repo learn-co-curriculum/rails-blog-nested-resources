@@ -1,8 +1,4 @@
----
-tags: rails, strong params, nested resources, REST, hidden_field
-language: ruby
-resources: 2
----
+
 
 ## Before doing this lab, you should have completed the following labs:
 1. Rails Blog Scaffold
@@ -11,7 +7,7 @@ resources: 2
 
 # Rails Blog: Comments
 
-We're going to add another feature to our blog app: the ability comment on a post.
+We're going to add another feature to our blog app: the ability to comment on a post.
 
 <em>Before anything</em>, note that when you generate models, controllers, etc, be sure to include this option, so that it skips tests (which we already have): `--no-test-framework`
 
