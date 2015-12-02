@@ -35,3 +35,5 @@ Check out the documentation on [Nested Resources](http://guides.rubyonrails.org/
 
 * [Nested Resources](http://guides.rubyonrails.org/routing.html#nested-resources)
 * [Hidden Fields](http://apidock.com/rails/ActionView/Helpers/FormHelper/hidden_field)
+
+<a href='https://learn.co/lessons/rails-blog-nested-resources' data-visibility='hidden'>View this lesson on Learn.co</a>
