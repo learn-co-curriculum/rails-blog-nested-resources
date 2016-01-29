@@ -36,4 +36,4 @@ Check out the documentation on [Nested Resources](http://guides.rubyonrails.org/
 * [Nested Resources](http://guides.rubyonrails.org/routing.html#nested-resources)
 * [Hidden Fields](http://apidock.com/rails/ActionView/Helpers/FormHelper/hidden_field)
 
-<a href='https://learn.co/lessons/rails-blog-nested-resources' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/rails-blog-nested-resources' title='Before doing this lab, you should have completed the following labs:'>Before doing this lab, you should have completed the following labs:</a> on Learn.co and start learning to code for free.</p>
