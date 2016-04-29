@@ -10,6 +10,7 @@ class PostsController < ApplicationController
 
   def new
     @post = Post.new
+    @tags = @post.tags.new
   end
 
   def edit
