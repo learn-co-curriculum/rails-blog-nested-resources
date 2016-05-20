@@ -11,9 +11,11 @@
   <% end %>
 </ul>
 <h3>Comments:</h3>
-  <% @post.comments.each do |comment| %>
-    <p><%= comment.content %> </p>
-  <% end %>
+  <div id="comments">
+    <% @post.comments.each do |comment| %>
+      <p><%= comment.content %> </p>
+    <% end %>
+  </div>
 
 <h4>Post a new comment:</h4>
 <%= form_for [@post, Comment.new] do |f| %>
