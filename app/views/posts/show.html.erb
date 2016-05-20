@@ -10,6 +10,23 @@
   <li><%= tag.name %></li>
   <% end %>
 </ul>
+<h3>Comments:</h3>
+  <% @post.comments.each do |comment| %>
+    <p><%= comment.content %> </p>
+  <% end %>
+
+<h4>Post a new comment:</h4>
+<%= form_for [@post, Comment.new] do |f| %>
+  <div class="field">
+    <%= f.label :content %><br>
+    <%= f.text_area :content %><br>
+    <%= f.hidden_field :post_id, :value => @post.id %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
 <%= link_to 'Back', posts_path %>
