@@ -3,10 +3,7 @@ class CommentsController < ApplicationController
   def create
     @comment = Comment.new(comment_params)
     if @comment.save
-      ActionCable.server.broadcast 'comments',
-        comment: @comment.content,
-        user: @comment.user
-      head :ok
+      
       # broadcast this comment to EVERYONE who is looking at the posts show page
     end
   end
