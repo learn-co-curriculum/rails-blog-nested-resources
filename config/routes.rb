@@ -5,5 +5,7 @@ Rails.application.routes.draw do
     resources :comments
   end
 
-  # mount ActionCable.server => '/cable'
+  mount ActionCable.server => '/cable'
+  
+  # ws::localhost300/cable
 end
