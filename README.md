@@ -1,5 +1,3 @@
-
-
 ## Before doing this lab, you should have completed the following labs:
 1. Rails Blog Scaffold
 2. Rails Blog Associations Validations
@@ -9,7 +7,7 @@
 
 We're going to add another feature to our blog app: the ability to comment on a post.
 
-<em>Before anything</em>, note that when you generate models, controllers, etc, be sure to include this option, so that it skips tests (which we already have): `--no-test-framework`
+***NOTE***: As with much of our Rails curriculum, remember to always use the `--no-test-framework` flag when you generate models, controllers, etc. That way, the Rails generators will not create additional tests on top of the test suite that already comes with the lesson. E.g., `rails g model User username:string email:string --no-test-framework`.
 
 ## Comments
 
