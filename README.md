@@ -33,5 +33,3 @@ Check out the documentation on [Nested Resources](http://guides.rubyonrails.org/
 
 * [Nested Resources](http://guides.rubyonrails.org/routing.html#nested-resources)
 * [Hidden Fields](http://apidock.com/rails/ActionView/Helpers/FormHelper/hidden_field)
-
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/rails-blog-nested-resources' title='Rails Blog: Comments'>Rails Blog: Comments</a> on Learn.co and start learning to code for free.</p>
